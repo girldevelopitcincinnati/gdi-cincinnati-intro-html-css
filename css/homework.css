@@ -9,6 +9,7 @@ body {
 	padding: 5%;
 	background-color: rgba(255,255,255,.7);
 	border-radius: 20px;
+	min-height: 600px;
 }
 
 li {
@@ -36,3 +37,36 @@ h1 {
 h2 {
 	color: #f05b62;
 }
+
+header {
+	clear: both;
+	
+}
+
+.lists{
+	clear: both;
+	margin: auto auto;
+}
+
+.column{
+	width: 25%;
+	min-height: 400px;
+	float: left;
+}
+
+a:link {
+
+}
+
+a:visited {
+
+}
+
+a:hover {
+
+}
+
+a:active {
+
+}
+
