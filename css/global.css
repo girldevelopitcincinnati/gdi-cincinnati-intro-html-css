@@ -1,7 +1,7 @@
 /*
-Dark Purple #5b3c83 
+Dark Purple #5b3c83
 Light Purple #b2abcb
-Blue #788fc3 
+Blue #788fc3
 Green #425f74
 Tan  #a79b9c
 Pink #f05b62
@@ -11,7 +11,7 @@ White #FFFFFF
 
 
 body {
-    color: #333; 
+    color: #333;
     font-family: helvetica, arial, sans-serif;
     padding-top: 70px;
     font-family: 'PT Sans Narrow', sans-serif;
@@ -52,10 +52,10 @@ nav li a:hover {
     float: left;
     margin: 10px;
 
-} 
+}
 
 .container {
-    width: 1024px; 
+    width: 1024px;
     margin: 0 auto;
 }
 
@@ -73,7 +73,7 @@ nav li a:hover {
 }
 
 #hero img {
-    width: 150px; 
+    width: 150px;
     border-radius: 50%;
     margin-top: 30px;
 }
@@ -125,7 +125,7 @@ p a:hover{
 p a:active{
     background-color: #b06ab9;
 
-} 
+}
 
 
 .column {
@@ -137,7 +137,7 @@ p a:active{
     width: 70%;
     max-width:70%;
     border-radius: 50%;
-    /* border: 5px solid #57BEC5; */ 
+    /* border: 5px solid #57BEC5; */
     margin-bottom: 20px;
 }
 .column h4 {
@@ -185,10 +185,9 @@ p a:active{
     padding: 5px;
 }
 
-
-
-
-
-
-
-
+.halfblock{
+	float: left;
+	width: 45%;
+	text-align: left;
+	margin-right: 5%;
+}

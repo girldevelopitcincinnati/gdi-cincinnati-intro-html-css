@@ -23,7 +23,7 @@
 		<!-- dark editor--><link rel="stylesheet" href="reveal/lib/css/dark.css">
 
 		<!-- If use the PDF print sheet so students can print slides-->
-		
+
 		<link rel="stylesheet" href="reveal/css/print/pdf.css" type="text/css" media="print">
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 		<!--[if lt IE 9]>
@@ -40,17 +40,11 @@
 			  <!-- Opening slide -->
         <section>
           <img src="images/gdi_logo_badge.png">
-          <h3>Beginning HTML and CSS</h3>
+          <h3>Intro to HTML and CSS</h3>
           <h4>Class 1</h4>
         </section>
-        
+
         <!-- Welcome-->
-        <section>
-         <h3> Welcome! </h3>
-          <p class="green" style="font-size: 200%"> Slide Deck </p>
-          <p><a href="http://catherinerust.com/intro/class1.html#/" target="_blank" alt="Class 1 Slides">Class 1 Slides </a></p>
-          <p>catherinerust.com/intro/class1.html</p>
-        </section>
 
         <section>
           <h3>Welcome!</h3>
@@ -67,7 +61,7 @@
           <p><small>1</small> This one's important</p>
           </div>
         </section>
-        
+
         <section>
           <h3>Welcome!</h3>
           <div class="left-align">
@@ -79,20 +73,20 @@
           </ul>
           </div>
         </section>
-        
+
         <!-- What is HTML?-->
         <section>
           <h3>What is HTML?</h3>
           <p>HTML is the code that allows us to build websites</p>
           <img src="images/homepage-view.png">
         </section>
-        
+
         <section>
           <h3>What is HTML?</h3>
           <p>If you 'view the source', you see this</p>
           <img src="images/homepage-html.png">
         </section>
-        
+
         <!-- History of HTML-->
         <section>
           <h3>History of HTML</h3>
@@ -100,12 +94,12 @@
             <li class="fragment">Invented by Tim Berners-Lee</li>
             <li class="fragment">Created "hypertext" to share scientific papers</li>
             <li class="fragment">First web page August 6, 1991</li>
-            <li class="fragment">Standardized by w3 Consortium: <br> 
+            <li class="fragment">Standardized by w3 Consortium: <br>
               <a href="http://www.w3schools.com/" target="_blank">w3schools.com</a>
             </li>
           </ul>
         </section>
-        
+
         <section>
           <h3>More History of HTML</h3>
           <ul>
@@ -114,9 +108,10 @@
             <li class="fragment">HTML 4 in 1997</li>
             <li class="fragment">XHTML in 2000</li>
             <li class="fragment">HTML 5 in 2008</li>
+						<li class="fragment">HTML standardized in 2014</li>
           </ul>
         </section>
-        
+
         <!-- Terms-->
         <section>
          <h3>Terms</h3>
@@ -139,14 +134,14 @@
            </li>
          </ul>
         </section>
-        
+
         <!-- Nitty gritty 1 - Clients and servers -->
         <section>
           <h3>Clients and servers</h3>
           <p>How your computer accesses websites:</p>
           <img src="images/client-server.png"/>
         </section>
-        
+
         <!-- Nitty gritty 2 - Tools -->
         <section>
           <h3>Tools</h3>
@@ -154,23 +149,19 @@
             <li>
               <div class="yellow">Browser</div>
               <div>Chrome</div>
-              <div>Firefox</div>
              </li>
              <li>
               <div class="yellow">Development Toolkit</div>
               <div>Chrome - Inspector</div>
-              <div>Firefox - Firebug</div>
              </li>
              <li>
               <div class="yellow">Text Editor</div>
-              <div>TextWrangler - Mac</div>
-              <div>Notepad ++ - Windows</div>
-              <div>gedit - Linux</div>
-              <div><span class="green">GDI Cincy Recomends:</span><br><a href="http://www.sublimetext.com/3" target="_blank">Sublime Text 3</a> - Linux, Mac, Windows</div>
+              <div><a href="http://www.atom.io" target="_blank">Atom</a> - Linux, Windows, Mac</div>
+              <div><a href="http://www.sublimetext.com/3" target="_blank">Sublime Text 3</a> - Linux, Mac, Windows</div>
              </li>
           </ul>
         </section>
-        
+
         <!-- Roles of HTML v CSS -->
         <section>
           <h3>Anatomy of a website</h3>
@@ -183,11 +174,9 @@
 
         <section>
           <h3>Most Important Slide of Today</h3>
-          <p style="font-size: 1000%;">&lt; &gt;</p>
-          <p class="fragment">Angle brackets. HTML.</p>
-          <p class="fragment">Every piece of content involves these.</p>
+          <img src="images/tagbreakdown.png" style="max-height: 500px">
         </section>
-        
+
         <section>
           <h3>Anatomy of a website</h3>
           <div class="green"> Concrete example</div>
@@ -224,7 +213,7 @@
           </ul>
 
         </section>
-        
+
         <!-- HTML element-->
         <section>
          <h3>Anatomy of an HTML Element</h3>
@@ -240,7 +229,7 @@
               </li>
               </ul>
             </li>
-          </ul>  
+          </ul>
         </section>
         <section>
          <h3>Anatomy of an HTML Element, cont.</h3>
@@ -248,7 +237,7 @@
             <li class="fragment">
            <span class="blue"> Tag </span>
             <ul>
-              <li>Markers that signal the beginning and 
+              <li>Markers that signal the beginning and
                end of an element</li>
                <li>Opening tag and Closing Tag
 <pre><code class="html">
@@ -262,14 +251,14 @@
               </li>
             </ul>
         </section>
-        
+
         <section>
          <h3>Anatomy of an HTML Element, cont.</h3>
          <ul>
            <li class="fragment">
              <span class="blue">Container Element</span>
              <ul>
-               <li>An element that can contain other elements or 
+               <li>An element that can contain other elements or
                content</li>
                <li>A paragraph (&lt;p>) contains text</li>
               </ul>
@@ -280,7 +269,7 @@
               <li>An element that cannot contain anything else</li>
               <li>
 <pre><code class="html"> &lt;br>
- &lt;img> 
+ &lt;img>
  &lt;hr>
 </code></pre>
               </li>
@@ -288,7 +277,7 @@
             </ul>
 
         </section>
-        
+
         <section>
          <h3>Anatomy of an HTML Element, cont.</h3>
          <ul>
@@ -304,12 +293,12 @@
           <li class="fragment">
             Drop them 'inside' your opening HTML tag
             <ul>
-              <li>Value is the value assigned to a given 
+              <li>Value is the value assigned to a given
               attribute.</li>
               <li>
 <pre><code class="html">
  &lt;a href="http://catherinerust.com">Catherine's Website&lt;/a>
- &lt;img src="cats.jpg"/> 
+ &lt;img src="cats.jpg"/>
 </code></pre>
               </li>
             </ul>
@@ -330,8 +319,27 @@
             <p><span style="font-size: 400%;" class="blue">?</span></p>
             <p class="fragment">Okay, let's build a skeleton!</p>
         </section>
-        
+
         <!-- HTML Page-->
+				<section>
+      <h3>Get Started: Folder Structure</h3>
+      <p>All the files for your site should be stored within the same folder.</p>
+
+      <div class="halfblock">
+      <p class="left-align"><strong>This includes:</strong></p>
+      <ul>
+        <li>HTML Files</li>
+        <li>CSS Files</li>
+        <li>Images</li>
+        <li>Script files</li>
+        <li>Anything else that will appear on your site</li>
+      </ul>
+      <p class="left-align" style="margin-top: .5em;"><small>Note: File names should not include spaces or special characters. File names ARE case sensitive.</small></p>
+      </div>
+      <div class="halfblock">
+        <img src="images/folderstructure1.png" alt="Diagram showing html-site folder with sub-folder for images, index.html, and styles.css" />
+      </div>
+    </section>
         <section>
         <h3>Doctype</h3>
         <p class="fragment">The ﬁrst thing on an HTML page is the "doctype", which tells the browser which version of the markup language the page is using.</p>
@@ -342,23 +350,23 @@
         </code></pre>
       </div>
         </section>
-        
+
         <section>
           <h3>HTML Tag</h3>
           <p>After &lt;doctype>, the page content must be
           contained between &lt;html> tags.</p>
           <pre><code class="html">
             &lt;!DOCTYPE html>
-            
+
             &lt;html>
 
-              All of our content is going to live between 
+              All of our content is going to live between
               these two tags.
 
             &lt;/html>
           </code></pre>
         </section>
-        
+
         <section>
           <h3>Head and Body Tags</h3>
           <div class="left-align">
@@ -366,7 +374,7 @@
             <p class="fragment">The <span class="green">&lt;body&gt;</span> contains the actual content of the page.</p>
           </div>
         </section>
-        
+
         <section>
           <h3>Head and Body Tags</h3>
           <p>This is the basis of a complete HTML web page, called a <em>skeleton</em>.</p>
@@ -385,7 +393,7 @@
             &lt;/html>
           </code></pre>
         </section>
-        
+
         <!-- Nesting-->
         <section>
           <h3>Nesting</h3>
@@ -399,7 +407,7 @@
           <p>So, you could put a link into a paragraph. Very common.</p>
 
 <pre class="fragment"><code class="html">
-&lt;p>I want you to visit &lt;a href="http://google.com/">this site&lt;/a>, 
+&lt;p>I want you to visit &lt;a href="http://google.com/">this site&lt;/a>,
 soon!&lt;/p>
 </code></pre>
 
@@ -409,7 +417,7 @@ soon!&lt;/p>
         <p class="fragment">Yay!!</p>
 
           </section>
-        
+
         <!-- Elements -->
         <!-- Paragraphs-->
         <section>
@@ -425,10 +433,10 @@ soon!&lt;/p>
   &lt;p>Paragraph 1&lt;/p> &lt;p>Paragraph 2&lt;/p>  &lt;p>Paragraph 3&lt;/p>
 </code></pre>
 <pre><code>
-  &lt;p>Paragraph 1&lt;/p> 
-  
-  
-  &lt;p>Paragraph 2&lt;/p>  
+  &lt;p>Paragraph 1&lt;/p>
+
+
+  &lt;p>Paragraph 2&lt;/p>
   &lt;p>Paragraph 3&lt;/p>
 </code></pre>
           </div>
@@ -436,13 +444,13 @@ soon!&lt;/p>
           <p>Paragraph 1</p>
           <p>Paragraph 2</p>
           <p>Paragraph 3</p>
-          
+
           </div>
           <div class="clear"></div>
           <p>* White space is only for humans! *</p>
           </div>
         </section>
-        
+
         <!-- Headings-->
         <section>
           <h3>Headings</h3>
@@ -469,7 +477,7 @@ soon!&lt;/p>
           <p>* Heading number indicates hierarchy, not size. * <br> Think: Writing outlines for papers in school.</p>
           </div>
         </section>
-        
+
         <!-- Lists-->
         <section>
           <h3>Lists</h3>
@@ -505,7 +513,7 @@ soon!&lt;/p>
           <div class="clear"></div>
           </div>
         </section>
-        
+
         <!-- Line Break-->
         <section>
           <h3>Line Breaks</h3>
@@ -535,7 +543,7 @@ Will always find their kind
           <p>* Notice: This tag is our first example of a stand-alone or "self-closing" element. A break can't contain anything. *</p>
           </div>
         </section>
-        
+
         <!-- Inline vs. block-->
         <section>
           <h3>Inline vs Block</h3>
@@ -543,7 +551,7 @@ Will always find their kind
             <div class="fragment">
               <p>So far, we have mostly seen <em class="green">block</em> elements</p>
               <p>They begin on the next line, like paragraphs.</p>
-            </div> 
+            </div>
             <br/><br/>
             <div class="fragment">
               <p>There are also <em class="green">inline</em> elements</p>
@@ -551,7 +559,7 @@ Will always find their kind
             </div>
           </div>
         </section>
-        
+
         <!-- Em and Strong-->
         <section>
           <h3>Formatted text</h3>
@@ -573,23 +581,20 @@ Will always find their kind
           <br/>
           <p>Notice: <span class="green">&lt;em&gt;</span> and <span class="green">&lt;strong&gt;</span> are meant to indicate meaning through style. If you want to have italicized or bold text for appearance - and not to communicate meaning - you should use CSS.</p>
           </div>
-        </section> 
-        
+        </section>
+
         <!-- Exercise-->
         <section>
           <h3>Let's Develop It!</h3>
           <p class="blue" class="fragment">We are going to start building a personal site.</p>
           <ol>
-            <li class="fragment">Create a new folder,<em class="yellow">"GDI"</em>, on your desktop.</li>
-            <li class="fragment">Create a new file and name it <em class="yellow">class1.html</em><br> 
-            <span style="font-size: 80%"> Keep your file names lowercase and without spaces.<br>
-            The ".html" tells the computer what type of file you have saved.</span></li>
+						<li class="fragment">Open your HTML file in your editor</li>
             <li class="fragment">Start the page with Doctype, Head, and Body - a Skeleton!</li>
             <li class="fragment">Write a paragraph about yourself.</li>
             <li class="fragment">Add a list of your favorite things.</li>
             <li class="fragment">Feel free to experiment!</li>
           </ol>
-        </section> 
+        </section>
 
         <section>
           <h3>Skeleton Syntax Review</h3>
@@ -609,7 +614,7 @@ Will always find their kind
 </code></pre>
           <p>You can steal the above code <a href="/skeleton.html" target="_blank">right here</a>. Just right-click, 'view source', and then copy and paste.</p>
           </section>
-        
+
         <!-- Links-->
         <section>
           <h3>Links</h3>
@@ -626,7 +631,7 @@ Will always find their kind
 
         <p class="fragment">What does HREF mean? Could be <a href="http://tomayko.com/writings/wtf-is-an-href-anyway" target="_blank">one of a few things</a>.</p>
         </section>
-        
+
         <!-- Images-->
         <section>
           <h3>Images</h3>
@@ -652,13 +657,13 @@ Will always find their kind
             <li>This would look more like:</li>
           </ul>
         </div>
-       
+
 <pre><code>
 &lt;img src="/images/billmurray.png" alt="Bill Murray"/>
 </code></pre>
 <img src="http://www.fillmurray.com/350/200" alt="Bill Murray"/>
         </section>
-        
+
         <!-- Exercise-->
         <section>
           <h3>Let's Develop It</h3>
@@ -676,7 +681,7 @@ Will always find their kind
           <a href="http://placehold.it/" alt="Place Hold It" target="_blank">placehold.it/</a>
 
         </section>
-        
+
        <!-- Tables -->
   <!-- <section>
           <h3>Tables</h3>
@@ -684,11 +689,11 @@ Will always find their kind
           <div class="left" style="width:50%">
 <pre><code>
 &lt;table>
-  &lt;tr> 
+  &lt;tr>
     &lt;th>Head&lt;/th>
     &lt;th>Head&lt;/th>
   &lt;/tr>
-  &lt;tr> 
+  &lt;tr>
     &lt;td>Data&lt;/td>
     &lt;td>Data&lt;/td>
   &lt;/tr>
@@ -698,11 +703,11 @@ Will always find their kind
           </div>
           <div class="left left-align" style="width:50%">
             <table style="border: 1px solid">
-              <tr> 
+              <tr>
                 <th style="border: 1px solid">Head</th>
                 <th style="border: 1px solid">Head</th>
               </tr>
-              <tr> 
+              <tr>
                 <td style="border: 1px solid">Data</td>
                 <td style="border: 1px solid">Data</td>
               </tr>
@@ -727,7 +732,7 @@ Will always find their kind
           <a href="http://rabbit.eng.miami.edu/info/htmlchars.html">Full list</a>
           </div>
         </section>
-        
+
         <!-- Questions?! -->
         <section>
           <h2>Questions?</h2>
