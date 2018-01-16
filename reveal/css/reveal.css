@@ -97,12 +97,11 @@ body {
 .left{float:left}
 .right{float:right}
 .clear{clear:both}
-.blue{color:#00C9D6 }
+.blue{color:#01A9B4 }
 .green{color:#92BB44}
 .yellow{color:#EDAB23}
 .pink{color:#F05B62}
 .red{color:#8B0036}
-.white{color:#FFFFFF}
 
 /*********************************************
  * HEADERS
@@ -451,6 +450,7 @@ body {
 
 .reveal .roll {
 	display: inline-block;
+	line-height: 1.2;
 	overflow: hidden;
 
 	vertical-align: top;
