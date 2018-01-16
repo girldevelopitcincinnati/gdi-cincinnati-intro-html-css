@@ -1,3 +1,5 @@
+
+
 .reveal section img.noborder{
 	border-width: 0;
 	box-shadow: none;
@@ -61,9 +63,7 @@ div.left-align{
     width: auto;
 }
 
-.reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6 {
-	letter-spacing: 0;
-}
+
 
 .reveal .class-materials__block {
 	background-color: #fff;
@@ -121,3 +121,18 @@ div.left-align{
 .reveal ul.bulletless {
 	list-style-type: none !important;
 }
+
+/*********************************************
+* OVERRIDES
+**********************************************/
+.left-align{text-align:left}
+.right-align{ text-align:right}
+.left{float:left}
+.right{float:right}
+.clear{clear:both}
+.blue{color:#00C9D6 }
+.green{color:#92BB44}
+.yellow{color:#EDAB23}
+.pink{color:#F05B62}
+.red{color:#8B0036}
+.white{color:#FFFFFF}
