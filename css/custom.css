@@ -8,6 +8,8 @@
 .reveal section img {
 	max-height: 500px;
 	max-width: 80%;
+	border: none;
+    background: rgba(255, 255, 255, 0);
 }
 
 div.halfblock{
@@ -80,10 +82,6 @@ div.left-align{
 
 .class-materials__block ul{
 	font-size: 0.9em;
-}
-
-.reveal section img {
-	border: none;
 }
 
 .reveal ul li {
