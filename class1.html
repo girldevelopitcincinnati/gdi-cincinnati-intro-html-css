@@ -54,13 +54,13 @@
 				<img src="images/new_years.png" alt="Sparkler Cake" style="box-shadow:none;"/>
 				<h1>Code Your First Website</h1>
 				<h4>New Year's Edition!</h4>
+				<h4 style="margin-top: 50px;"><span class="white">Today's Slides</span></h4>
 				<p>
-					<h4 style="margin-top: 50px;"><span class="white">Today's Slides</span></h4>
 					<a href="http://html.gdicincy.com/class1.html">http://html.gdicincy.com/class1.html</a>
 				</p>
+				<h4 style="margin-top: 50px;"><span class="white">Join Us On Slack!</span></h4>
 				<p>
-					<h4 style="margin-top: 50px;"><span class="white">Join Us On Slack!</span></h4>
-					<a href="http://slack.gdicincy.com/">http://slack.gdicincy.com/</a>
+					<a href="http://slack.gdicincy.com/" target="_blank">http://slack.gdicincy.com/</a>
 				</p>
 			</section>
 
@@ -146,13 +146,13 @@
 			<section>
 				<h3>What is HTML?</h3>
 				<p>HTML is the code that allows us to build websites</p>
-				<img src="images/homepage-view.png">
+				<img src="images/homepage-view.png" alt="Screenshot of website">
 			</section>
 
 			<section>
 				<h3>What is HTML?</h3>
 				<p>If you 'view the source', you see this</p>
-				<img src="images/homepage-html.png">
+				<img src="images/homepage-html.png" alt="Screenshot of HTML code">
 			</section>
 
 			<section>
@@ -169,7 +169,7 @@
 				<h3>More History of HTML</h3>
 				<ul>
 					<li class="fragment"><strong class="yellow">H</strong>yper<strong class="yellow">T</strong>ext <strong class="yellow">M</strong>arkup <strong class="yellow">L</strong>anguage</li>
-					<li class="fragment">Early 90s <a href="http://www.warnerbros.com/archive/spacejam/movie/jam.htm" alt="Space Jam" target="_blank">[Link]</a></li>
+					<li class="fragment">Early 90s <a href="http://www.warnerbros.com/archive/spacejam/movie/jam.htm" title="Space Jam" target="_blank">[Link]</a></li>
 					<li class="fragment">HTML 4 in 1997</li>
 					<li class="fragment">XHTML in 2000</li>
 					<li class="fragment">HTML 5, first working draft in 2008</li>
@@ -200,7 +200,7 @@
 			<section>
 				<h3>Clients and servers</h3>
 				<p>How your computer accesses websites:</p>
-				<img src="images/client-server.png" style="box-shadow:none;"/>
+				<img src="images/client-server.png" alt="Client-Server Diagram" style="box-shadow:none;"/>
 			</section>
 
 			<section>
@@ -246,10 +246,10 @@
 				<div class="left-align">
 					<h4><span class="green">Images</span></h4>
 					<ul class="bulletless">
-						<li><a href="http://www.fillmurray.com/" alt="Fill Murray" target="_blank">Fill Murray</a></li>
-						<li><a href="http://placecorgi.com/" alt="Place Corgi" target="_blank">Place Corgi</a></li>
-						<li><a href="http://baconmockup.com/" alt="Bacon Mockup" target="_blank">Bacon Mockup</a></li>
-						<li><a href="https://placeholder.com/" alt="Place Hold It" target="_blank">Placeholder</a></li>
+						<li><a href="http://www.fillmurray.com/" title="Fill Murray" target="_blank">Fill Murray</a></li>
+						<li><a href="http://placecorgi.com/" title="Place Corgi" target="_blank">Place Corgi</a></li>
+						<li><a href="http://baconmockup.com/" title="Bacon Mockup" target="_blank">Bacon Mockup</a></li>
+						<li><a href="https://placeholder.com/" title="Place Hold It" target="_blank">Placeholder</a></li>
 					</ul>
 				</div>
 			</section>
@@ -281,7 +281,7 @@
 						<li class="fragment">
 							Wrapping your content in an HTML Element to mark it as a paragraph <strong class="yellow">structure</strong>.
 							<br/>
-							<pre><code class="html">&lt;p>A paragraph is your content.&lt;/p></code></pre>
+							<pre><code class="xml">&lt;p>A paragraph is your content.&lt;/p></code></pre>
 						</li>
 						<li class="fragment">
 							Making the font of your paragraph blue and 18pt is <strong class="yellow">presentation</strong>:
@@ -298,9 +298,8 @@
 				<ul>
 					<li>An individual component of HTML</li>
 					<li>Example: Paragraph, heading, table, list, link, image, etc</li>
-					</li>
 				</ul>
-				<pre><code class="html">&lt;p>This is an HTML element, right here&lt;/p></code></pre>
+				<pre><code class="xml">&lt;p>This is an HTML element, right here&lt;/p></code></pre>
 			</section>
 
 			<section>
@@ -313,13 +312,13 @@
 					<li>Opening tag and Closing Tag</li>
 					<li>Tags contain characters that indicate the element's purpose</li>
 				</ul>
-				<pre><code class="html">&lt;tagname>Stuff in the middle&lt;/tagname></code></pre>
-				<pre><code class="html">&lt;p>This is a sample paragraph.&lt;/p></code></pre>
+				<pre><code class="xml">&lt;tagname>Stuff in the middle&lt;/tagname></code></pre>
+				<pre><code class="xml">&lt;p>This is a sample paragraph.&lt;/p></code></pre>
 			</section>
 
 			<section>
 				<h3>Tag Breakdown</h3>
-				<img src="images/tagbreakdown.png" style="max-height: 500px">
+				<img src="images/tagbreakdown.png" alt="Anatomy of a Tag" style="max-height: 500px">
 			</section>
 
 			<section>
@@ -330,7 +329,7 @@
 						<li>Can contain other elements or content</li>
 						<li>Has an opening and closing tag</li>
 					</ul>
-					<pre><code class="html">&lt;p>A paragraph is a container element.&lt;/p></code></pre>
+					<pre><code class="xml">&lt;p>A paragraph is a container element.&lt;/p></code></pre>
 				</div>
 				<br/>
 				<div class="fragment left-align">
@@ -339,7 +338,7 @@
 						<li>Cannot contain anything else</li>
 						<li>Does not have a closing tag</li>
 					</ul>
-					<pre><code class="html">&lt;br />
+					<pre><code class="xml">&lt;br />
 &lt;img />
 &lt;hr /></code></pre>
 				</div>
@@ -364,7 +363,7 @@
 					</ul>
 				</div>
 				<div class="clear"><br/></div>
-				<pre><code class="html">&lt;p style="font-family: courier;">content here&lt;/p></code></pre>
+				<pre><code class="xml">&lt;p style="font-family: courier;">content here&lt;/p></code></pre>
 			</section>
 
 			<section>
@@ -413,7 +412,7 @@
 				<div class="left-align">The ﬁrst thing on an HTML page is the <strong class="green">doctype</strong>, which tells the browser which version of the markup language the page is using.</div>
 				<br/>
 				<div class="fragment left-align">Here's the doctype we use to tell the browser "Hey, this is HTML5, buddy."
-					<pre><code class="html">&lt;!DOCTYPE html></code></pre>
+					<pre><code class="xml">&lt;!DOCTYPE html></code></pre>
 				</div>
 
 			</section>
@@ -423,7 +422,7 @@
 				<p>After <code class="yellow">&lt;!DOCTYPE></code>, the page content must be
 					contained between <code class="yellow">&lt;html></code> tags.
 				</p>
-				<pre><code class="html">&lt;!DOCTYPE html>
+				<pre><code class="xml">&lt;!DOCTYPE html>
 &lt;html>
 
   All of our content is going to live between
@@ -438,7 +437,7 @@
 					<p>The <strong class="yellow">&lt;head&gt;</strong> contains meta (internal) information about the page.</p>
 					<p>The <strong class="yellow">&lt;body&gt;</strong> contains the actual content of the page.</p>
 				</div>
-				<pre><code class="html">&lt;!DOCTYPE html>
+				<pre><code class="xml">&lt;!DOCTYPE html>
 &lt;html>
 
   &lt;head>
@@ -462,7 +461,6 @@
 			<section>
 				<img src="images/new_years.png" alt="Sparkler Cake" style="box-shadow:none; width:70px; height: 70px; vertical-align:middle;margin-top:0px;"/>
 				<h3>Let's Develop It!</h3>
-				<div class="clear"></div>
 				<p>Let's get our web page set up with a <strong class="green">doctype</strong>, <strong class="green">head</strong>, <strong class="green">title</strong>, and <strong class="green">body</strong>. Later, we'll add some content.</p>
 				<small>Tip: Save your file as a <code class="yellow">.html</code> file before you get started! Your text editor will add syntax highlighting to make your code easier to read.</small>
 			</section>
@@ -497,11 +495,11 @@
 			<section>
 				<h3>Nesting</h3>
 				<p><strong class="green">Nesting</strong> is the placement of containing tags inside other containing tags. For example, you would put a set of <span class="yellow">&lt;p&gt;</span> tags inside of the <span class="yellow">&lt;body&gt;</span> tags. The <span class="yellow">&lt;p&gt;</span> is now nested inside the <span class="yellow">&lt;body&gt;</span>.</p>
-				<pre><code class="html">&lt;body&gt;
+				<pre><code class="xml">&lt;body&gt;
   &lt;p&gt;A paragraph inside the body tag&lt;/p&gt;
 &lt;/body&gt;</code></pre>
 				<small>Paragraph nested inside the &lt;body&gt; tag.</small>
-				<pre><code class="html">&lt;ul&gt;
+				<pre><code class="xml">&lt;ul&gt;
   &lt;li&gt;
     &lt;p&gt;A paragraph inside a list item&lt;/p&gt;
   &lt;/li&gt;
@@ -511,7 +509,7 @@
 
 			<section>
 				<h3>Nesting</h3>
-				<img src="images/owls.jpg"/>
+				<img src="images/owls.jpg" alt="Nesting Owls"/>
 				<p>All elements "nest" inside one another. Whichever element opens <em>first</em> closes <em>last</em>.</p>
 			</section>
 
@@ -560,11 +558,11 @@
 				<h3>Paragraphs</h3>
 				<div>
 					<div class="left" style="width:60%">
-						<pre><code class="html">&lt;p>Paragraph 1&lt;/p>
+						<pre><code class="xml">&lt;p>Paragraph 1&lt;/p>
 &lt;p>Paragraph 2&lt;/p>
 &lt;p>Paragraph 3&lt;/p></code></pre>
-						<pre><code class="html">&lt;p>Paragraph 1&lt;/p> &lt;p>Paragraph 2&lt;/p>  &lt;p>Paragraph 3&lt;/p></code></pre>
-						<pre><code class="html">&lt;p>Paragraph 1&lt;/p>
+						<pre><code class="xml">&lt;p>Paragraph 1&lt;/p> &lt;p>Paragraph 2&lt;/p>  &lt;p>Paragraph 3&lt;/p></code></pre>
+						<pre><code class="xml">&lt;p>Paragraph 1&lt;/p>
 
 
 &lt;p>Paragraph 2&lt;/p>
@@ -752,10 +750,10 @@
 				<ul class="bulletless">
 					<li><span class="green">Tag</span>: <strong class="yellow">&lt;a> &lt;/a></strong></li>
 					<li><span class="green">href attribute</span>: location of your link</li>
-					<li><span class="green">alt attribute</span>: description for screen readers</li>
+					<li><span class="green">title attribute</span>: description for screen readers</li>
 				</ul>
-				<pre><code>&lt;a href="http://www.girldevelopit.com" alt="Girl Develop It Homepage">Girl Develop It!&lt;/a></code></pre>
-				<p><a href="http://www.girldevelopit.com" alt="Girl Develop It Homepage">Girl Develop It!</a></p>
+				<pre><code>&lt;a href="http://www.girldevelopit.com" title="Girl Develop It Homepage">Girl Develop It!&lt;/a></code></pre>
+				<p><a href="http://www.girldevelopit.com" title="Girl Develop It Homepage">Girl Develop It!</a></p>
 				<p>Link tags can surround text or images.</p>
 			</section>
 
@@ -764,12 +762,12 @@
 				<p>
 					Links can also have attributes that tell the link to do different actions like open in a new tab, or launch your email program.
 				</p>
-				<pre><code class="html">&lt;a href="home.html" target="_blank"&gt;Link Text&lt;/a&gt;</code></pre>
+				<pre><code class="xml">&lt;a href="home.html" target="_blank"&gt;Link Text&lt;/a&gt;</code></pre>
 				<p>
 					<small>Link opens in a new window or tab with <code class="yellow">target="_blank"</code></small>
 				</p>
 				<!-- Change email to fit your chapter's needs-->
-				<pre><code class="html">&lt;a href="mailto:sponsorships@girldevelopit.com"&gt;E-mail us!&lt;/a&gt;</code></pre>
+				<pre><code class="xml">&lt;a href="mailto:sponsorships@girldevelopit.com"&gt;E-mail us!&lt;/a&gt;</code></pre>
 				<p>
 					<small>Adding <code class="yellow">mailto:</code> directly before the email address will open the link in the default email program.</small>
 				</p>
@@ -829,7 +827,7 @@
 				<p>Tables are a way to represent complex information in a grid format. They are made up of rows and columns.</p>
 				<div>
 					<div class="halfblock">
-						<pre><code class="html">&lt;table&gt;
+						<pre><code class="xml">&lt;table&gt;
   &lt;tr&gt;
     &lt;th&gt;Head&lt;/th&gt;
     &lt;th&gt;Head&lt;/th&gt;
@@ -860,14 +858,12 @@
 							</tr>
 						</table>
 						<br/>
-						<small>
-							<ul class="bulletless">
-								<li><code class="yellow">&lt;table></code> Entire Table</li>
-								<li><code class="yellow">&lt;tr></code> Table Row</li>
-								<li><code class="yellow">&lt;td></code> Data Cell</li>
-								<li><code class="yellow">&lt;th></code> Header Cell</li>
-							</ul>
-						</small>
+						<ul class="bulletless">
+							<li style="line-height:0.9;"><small><code class="yellow">&lt;table></code> Entire Table</small></li>
+							<li style="line-height:0.9;"><small><code class="yellow">&lt;tr></code> Table Row</small></li>
+							<li style="line-height:0.9;"><small><code class="yellow">&lt;td></code> Data Cell</small></li>
+							<li style="line-height:0.9;"><small><code class="yellow">&lt;th></code> Header Cell</small></li>
+						</ul>
 					</div>
 					<div class ="clear"></div>
 				</div>
@@ -878,7 +874,7 @@
 				<p>For more semantic oomph, you can wrap your header, body and footer rows in thead, tbody, tfoot tags.</p>
 				<div>
 					<div class="halfblock">
-						<pre><code class="html">&lt;table&gt;
+						<pre><code class="xml">&lt;table&gt;
   &lt;thead&gt;
     &lt;tr&gt;
       &lt;th&gt;Head&lt;/th&gt;
@@ -921,13 +917,11 @@
 							</tbody>
 						</table>
 						<br/>
-						<small>
-							<ul class="bulletless">
-								<li><code class="yellow">&lt;thead></code> Table Header</li>
-								<li><code class="yellow">&lt;tbody></code> Table Body</li>
-								<li><code class="yellow">&lt;tfoot></code> Table Footer</li>
-							</ul>
-						</small>
+						<ul class="bulletless">
+							<li style="line-height:0.9;"><small><code class="yellow">&lt;thead></code> Table Header</small></li>
+							<li style="line-height:0.9;"><small><code class="yellow">&lt;tbody></code> Table Body</small></li>
+							<li style="line-height:0.9;"><small><code class="yellow">&lt;tfoot></code> Table Footer</small></li>
+						</ul>
 					</div>
 					<div class ="clear"></div>
 				</div>
@@ -945,11 +939,11 @@
 				<p>
 					You can add comments to your code that will not be seen by the browser, but only visible when viewing the code.
 				</p>
-				<pre><code class="html">&lt;!-- Comment goes here --&gt;</code></pre>
+				<pre><code class="xml">&lt;!-- Comment goes here --&gt;</code></pre>
 				<p>
 					<small>Comments can be used to organize your code into sections so you (or someone else) can easily understand your code. You can also 'comment out' large chunks of code to test for bugs.</small>
 				</p>
-				<pre><code class="html">&lt;!-- Beginning of header --&gt;
+				<pre><code class="xml">&lt;!-- Beginning of header --&gt;
   &lt;div id="header"&gt;Header Content &lt;/div&gt;
   &lt;!-- End of header --&gt;
 
@@ -996,13 +990,14 @@
 
 			<section>
 				<h3><a href="homework1.html" target="_blank">Homework for Next Class</a></h3>
+				<h4><a href="files/reference-sheet-1.pdf" target="blank">Class 1 Reference Sheet</a></h4>
 				<br/>
 				<h4>Need Help?</h4>
 				<p class="left-align">Email me or reach out to any of us through Slack!  The staff and TA's for this class are:
 				<ul>
 					<li>Maria Szubski (MariaSzubski@gmail.com)</li>
 					<li>Lauren Lawson</li>
-					<li>Jen Chila</li>
+					<li>Jen Cihla</li>
 					<li>Sam Essel-Addo</li>
 					<li>Sara Powell</li>
 				</ul>
