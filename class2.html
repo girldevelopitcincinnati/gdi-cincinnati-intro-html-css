@@ -73,6 +73,34 @@
 			</section>
 
 			<section>
+				<h4>Correction</h4>
+				<h3>Links</h3>
+				<ul>
+					<li>Links <em>cannot</em> have an <code class="yellow">alt=""</code> attribute</li>
+					<li>Links can have the optional <code class="yellow">title=""</code> attribute which creates cursor tooltip </li>
+				</ul>
+				<pre><code>&lt;a href="http://www.girldevelopit.com" title="Girl Develop It Homepage">Girl Develop It!&lt;/a></code></pre>
+				<p><a href="http://www.girldevelopit.com" title="Girl Develop It Homepage">Girl Develop It!</a></p>
+			</section>
+
+			<section>
+				<h4>Let's Review</h4>
+				<h3>Empty Elements</h3>
+				<div class="clear"></div>
+					<ul>
+						<li>Cannot contain anything else</li>
+						<li>Does not have a closing tag</li>
+						<li>Can end with or without a forward slash <strong class="yellow">/</strong>
+					</ul>
+				<div>
+					<pre class="left" style="width:49%"><code class="xml">&lt;br/>
+&lt;br></code></pre>
+					<pre class="right" style="width:49%"><code class="xml">&lt;img src="image.png" alt="desc" />
+&lt;img src="image.png" alt="desc"></code></pre>
+				</div>
+			</section>
+
+			<section>
 				<h3>Quiz Part 1</h3>
 				<p>Which tag is used to create a link to another page?</p>
 				<ol>
@@ -86,13 +114,13 @@
 
 			<section>
 				<h3>Quiz Part 2</h3>
-				<p>What are the two tags that nest directly within the <code class="yellow">&lt;html></code> tags?</p>
+				<p>What are the two tags that nest directly within the </br><code class="yellow">&lt;html>&lt;/html></code> tags?</p>
 				<div class="fragment green">Answer: <code>&lt;head></code> and <code>&lt;body></code></div>
 			</section>
 
 			<section>
 				<h3>Quiz Part 3</h3>
-				<p>What is it called when you have a 'tag' + 'content' + 'closing tag'?</p>
+				<p>What is it called when you have a 'opening tag' + 'content' + 'closing tag'?</p>
 				<div class="fragment green">Answer: An HTML <strong>Element</strong></div>
 				<div class="fragment" style="margin-top:1em;">
 					<div class="left" style="width: 27%;">
@@ -123,6 +151,7 @@
 				<br/>
 				<p class="fragment">A website is a way to present your content to the world, using HTML and CSS to display that content &amp; make it look good.</p>
 			</section>
+
 
 			<!-- 														WHAT IS CSS? -->
 			<section>
@@ -222,7 +251,7 @@
 				<h3>Inline</h3>
 				<pre><code class="xml">&lt;p style="color:red"&gt;Some text.&lt;/p&gt;</code></pre>
 				<ul>
-					<li class="fragment">Use <code class="yellow">style=""</code> attribute to add CSS to an HTML element</li>
+					<li class="fragment">Use the <code class="yellow">style=""</code> attribute to add CSS to an HTML element</li>
 					<li class="fragment">CSS declarations are placed inside the quotations <strong class="yellow">" "</strong>
 					<li class="fragment">Difficult to use and update in large projects</li>
 					<li class="fragment">Not preferred</li>
@@ -241,7 +270,7 @@
   &lt;/style&gt;
 &lt;/head&gt;</code></pre>
 				<ul>
-					<li class="fragment">Use the <code class="yellow">&lt;style&gt;</code> tag</li>
+					<li class="fragment">CSS is placed inside the <code class="yellow">&lt;style&gt;</code> tag </li>
 					<li class="fragment">Nested inside <code class="yellow">&lt;head&gt;</code> element in an HTML file</li>
 					<li class="fragment">Uses standard CSS syntax</li>
 					<li class="fragment">Can only be used by one html file</li>
@@ -250,13 +279,13 @@
 
 			<section>
 				<h4>Connecting CSS to HTML</h4>
-				<h3>Linked</h3>
+				<h3>External</h3>
 				<pre><code class="xml">&lt;head&gt;
   &lt;link href="style.css" rel="stylesheet" type="text/css"&gt;
 &lt;/head&gt;</code></pre>
 				<ul>
 					<li class="fragment">Create a separate <code class="yellow">.css</code> file for CSS rules</li>
-					<li class="fragment">Link the external stylesheet in the <code class="yellow">&lt;head></code> tag</li>
+					<li class="fragment">Link to the external stylesheet in the <code class="yellow">&lt;head></code> tag</li>
 					<li class="fragment">Shared resource for multiple pages</li>
 					<li class="fragment">Reduces ﬁle size &amp; bandwidth</li>
 					<li class="fragment">Easy to maintain in larger projects</li>
@@ -360,8 +389,8 @@
 				<p>Some properties like <code>background</code> and <code>font-family</code> can have one or more comma separated values.</p>
 				<pre><code class="css">p {
   color: white;
-  background: url(bubbles.png), url(stars.png);
   font-family: Arial, sans-serif;
+  background-image: url('img/bubbles.png'), url('img/stars.png');
 }</code></pre>
 			</section>
 
@@ -369,20 +398,19 @@
 				<h3>Property: Font-family</h3>
 				<p>The font-family property deﬁnes which font is used.</p>
 				<pre style="width:50%;"><code class="css">p {
-  font-family: "Times New Roman";
+  font-family: "Trebuchet MS";
   font-family: serif;
   font-family: "Arial", sans-serif;
 }</code></pre>
 				<ul>
-					<li class="fragment">Specific font name</li>
-					<li class="fragment">Generic font name</li>
-					<li class="fragment">Define multiple fonts in a comma-separated list</li>
+					<li class="fragment">Can be a Generic or Specific font name</li>
+					<li class="fragment">Define alternative fonts in a comma-separated list</li>
 					<li class="fragment">Wrap font names with spaces in matching <br/>quotations <strong class="yellow">" "</strong> or <strong class="yellow">' '</strong>.</li>
 				</ul>
 			</section>
 
 			<section>
-				<h3>Default Font Options</h3>
+				<h3>Web Safe Font Options</h3>
 				<div class="left left-align" style="margin-top:1em;">
 					<h4 class="white">Common Web Fonts</h4>
 					<ul class="bulletless">
@@ -526,7 +554,7 @@
 				<pre style="width:50%;"><code class="css">#footer {
   background-color:#1A6687;
 }</code></pre>
-				<small>Selects all elements with an id of "footer".</small>
+				<small>Selects the element with an id of "footer".</small>
 				<pre style="width:50%;"><code class="xml">&lt;p id="footer"&gt;&copy; Copyright 2011&lt;/p&gt;</code></pre>
 				<small>The associated HTML uses the <code class="yellow">id=""</code> attribute.</small>
 				<p style="background-color:#1A6687; width: 50%; margin:auto; margin-top:1em; font-size:70%; padding:0.5rem; box-sizing: border-box;">© Copyright 2011</p>
@@ -534,7 +562,7 @@
 
 			<section>
 				<h4>Types of Selectors</h4>
-				<h3>Types of Selectors: Class</h3>
+				<h3>Class</h3>
 				<pre style="width:50%;"><code class="css">.warning {
   color: red;
 }</code></pre>
@@ -647,11 +675,12 @@ a { /* This rule wins */
 .pink {color:#F05B62}
 .red {color:#8B0036}
 
-/* Header Styles */
+/*
 #header {
 	width: 100%;
 	height: 50px;
 	background-color: #F05B62;
+ */
 }</code></pre>
 			</section>
 
