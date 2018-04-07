@@ -65,7 +65,7 @@ h1 { font-size: 26pt !important;  }
 h2 { font-size: 22pt !important; }
 h3 { font-size: 20pt !important; }
 h4 { font-size: 20pt !important; font-variant: small-caps; }
-h5 { font-size: 19pt !important; }
+h5 { font-size: 16pt !important; }
 h6 { font-size: 18pt !important; font-style: italic; }
 
 /* SECTION 5: Make hyperlinks more usable.
