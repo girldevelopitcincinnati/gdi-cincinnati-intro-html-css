@@ -51,12 +51,12 @@
 		<!-- Any section element inside of this container is displayed as a slide-->
 		<div class="slides">
 			<section>
-				<img src="images/new_years.png" alt="Sparkler Cake" style="box-shadow:none;"/>
+        <img src="images/happy_code.png" alt="Happy Code" class="noborder" style="width:240px;height:auto;">
 				<h1>Code Your First Website</h1>
-				<h4>New Year's Edition!</h4>
-				<h4 style="margin-top: 50px;"><span class="white">Today's Slides</span></h4>
+				<h4>Intro to HTML and CSS</h4>
+				<h4 style="margin-top: 50px;"><span class="white">Class Materials</span></h4>
 				<p>
-					<a href="http://html.gdicincy.com/class3.html">http://html.gdicincy.com/class3.html</a>
+					<a href="http://html.gdicincy.com">http://html.gdicincy.com</a>
 				</p>
 			</section>
 
@@ -70,36 +70,6 @@
 				<h1>Review Time!</h1>
 			</section>
 
-			<section>
-				<h3>Quiz Part 1</h3>
-				<p>Within your <code class="yellow">&lt;html&gt;&lt;/html&gt;</code> tags, which are the two nested tags required for a website?</p>
-				<div class="fragment">
-					<pre style="width:40%;"><code class="xml">&lt;html&gt;
-  &lt;head&gt;
-  &lt;/head&gt;
-  &lt;body&gt;
-  &lt;/body&gt;
-&lt;/html&gt;</code></pre>
-
-				</div>
-			</section>
-
-			<section>
-				<h3>Quiz Part 2</h3>
-				<p>What does a complete paragraph element look like?</p>
-				<div class="fragment">
-					<pre style="width:40%;"><code class="xml">&lt;p&gt;This is a paragraph&lt;/p&gt;</code></pre>
-				</div>
-			</section>
-
-			<section>
-				<h3>Quiz Part 3</h3>
-				<p>What does a complete link (anchor) element look like?  Hint: needs an 'href'.</p>
-				<div class="fragment">
-					<pre><code class="xml">&lt;a href="http://google.com/"&gt;This goes to google&lt;/a&gt;</code></pre>
-				</div>
-			</section>
-
 			<!-- 														Inline & Block Elements -->
 			<section>
 			    <h4>SECTION 1</h4>
@@ -109,8 +79,8 @@
 			<section>
 				<h3>Inline vs Block</h3>
 				<div class="halfblock">
-					<p>So far, we have mostly seen <strong class="green">"block"</strong> elements. They appear on the next line, like paragraphs.</p>
-					<p>There are also <strong class="green">"inline"</strong> elements. They appear on the same line that they are written on, like links.</p>
+					<p><strong class="green">Block</strong> elements appear on a new line and occupy the entire space of the container.</p>
+					<p><strong class="green">Inline</strong> elements appear anywhere in a line and do not break the flow of content.</p>
 				</div>
 				<div class="halfblock">
 					<img src="images/example-blockinline.png" alt="example of inline and block elements" />
@@ -184,13 +154,6 @@
 			</section>
 
 			<section>
-				<img src="images/new_years.png" alt="Sparkler Cake" style="box-shadow:none; width:70px; height: 70px; vertical-align:middle;margin-top:0px;"/>
-				<h3>Let's Develop It!</h3>
-				<p>Use divs to separate content on your page into different sections.</p>
-				<p>Create a <span class="green">header</span>, <span class="green">content area</span>, <span class="green">sidebar</span>, and a <span class="green">footer</span>.</p>
-			</section>
-
-			<section>
 				<h3>HTML5</h3>
 				<p>HTML5 offers new elements that provide better <br/>document structure and semantics.</p>
 				<p>Some of the most commonly used new tags include:</p>
@@ -204,53 +167,50 @@
 			</section>
 
 			<section>
-				<h3>Sample Code</h3>
-				<p>A page divided into divs might look like this:</p>
-				<pre><code class="xml">&lt;!doctype html&gt;
-&lt;html&gt;
-    &lt;head&gt;
-        &lt;title&gt;Sample Page&lt;/title&gt;
-    &lt;/head&gt;
-    &lt;body&gt;
-        &lt;div id="header"&gt;
-            &lt;h1&gt;My Page Title&lt;/h1&gt;
-        &lt;/div&gt;
-        &lt;div id="content"&gt;
-            &lt;p&gt;The main content&lt;/p&gt;
-        &lt;/div&gt;
-        &lt;div id="sidebar"&gt;
-            &lt;p&gt;Some stuff in a sidebar&lt;/p&gt;
-        &lt;/div&gt;
-        &lt;div id="footer"&gt;
-            &lt;p&gt;Copyright me&lt;/p&gt;
-        &lt;/div&gt;
-    &lt;/body&gt;
-&lt;/html&gt;</code></pre>
+				<h3>Sample Code: Sectioning</h3>
+				<div class="left" style="width: 49%">
+					<p>Divs & IDs:</p>
+					<pre><code class="xml">&lt;body&gt;
+    &lt;div id="header"&gt;
+        &lt;h1&gt;My Page Title&lt;/h1&gt;
+    &lt;/div&gt;
+    &lt;div id="content"&gt;
+        &lt;p&gt;The main content&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div id="sidebar"&gt;
+        &lt;p&gt;The sidebar content&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div id="footer"&gt;
+        &lt;p&gt;Copyright me&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/body&gt;</code></pre>
+				</div>
+				<div class="right" style="width: 49%">
+					<p>HTML 5 Elements:</p>
+					<pre><code class="xml">&lt;body&gt;
+    &lt;header&gt;
+       &lt;h1&gt;My Page Title&lt;/h1&gt;
+    &lt;/header&gt;
+    &lt;main&gt;
+        &lt;p&gt;The main content&lt;/p&gt;
+    &lt;/main&gt;
+    &lt;aside&gt;
+        &lt;p&gt;The sidebar content&lt;/p&gt;
+    &lt;/aside&gt;
+    &lt;footer&gt;
+        &lt;p&gt;Copyright me&lt;/p&gt;
+    &lt;/footer&gt;
+&lt;/body&gt;</code></pre>
+				</div>
+				<div class="clear"></div>
 			</section>
 
 			<section>
-				<h3>Sample Code: HTML5</h3>
-				<p>A page divided using HTML5 elements might look like this:</p>
-				<pre><code class="xml">&lt;!doctype html&gt;
-&lt;html&gt;
-    &lt;head&gt;
-        &lt;title&gt;Sample Page&lt;/title&gt;
-    &lt;/head&gt;
-    &lt;body&gt;
-        &lt;header&gt;
-            &lt;h1&gt;My Page Title&lt;/h1&gt;
-        &lt;/header&gt;
-        &lt;main&gt;
-            &lt;p&gt;The main content&lt;/p&gt;
-        &lt;/main&gt;
-        &lt;aside&gt;
-            &lt;p&gt;Some stuff in a sidebar&lt;/p&gt;
-        &lt;/aside&gt;
-        &lt;footer&gt;
-            &lt;p&gt;Copyright me&lt;/p&gt;
-        &lt;/footer&gt;
-    &lt;/body&gt;
-&lt;/html&gt;</code></pre>
+				<img src="images/happy_code.png" alt="Happy Code" class="noborder" style="width:90px;height:auto;">
+				<h3>Let's Develop It!</h3>
+        <h5>Exercise 1</h5>
+				<p>Use divs or HTML5 tags to separate content on your page into different sections.</p>
+				<p>Create a <span class="green">header</span>, <span class="green">content area</span>, <span class="green">sidebar</span>, and a <span class="green">footer</span>.</p>
 			</section>
 
 			<section>
@@ -269,13 +229,14 @@
 				<pre style="width:40%;"><code class="css">.highlight {
   color: orange;
 }</code></pre>
-				<pre><code class="xml">&lt;p&gt;Paragraph with &lt;span class="highlight"&gt;teal&lt;/span&gt; text.&lt;/p&gt;</code></pre>
+				<pre><code class="xml">&lt;p&gt;Paragraph with &lt;span class="highlight"&gt;orangex&lt;/span&gt; text.&lt;/p&gt;</code></pre>
 				<p>Paragraph with <span style="color:orange;">orange</span> text.</p>
 			</section>
 
 			<section>
-				<img src="images/new_years.png" alt="Sparkler Cake" style="box-shadow:none; width:70px; height: 70px; vertical-align:middle;margin-top:0px;"/>
+				<img src="images/happy_code.png" alt="Happy Code" class="noborder" style="width:90px;height:auto;">
 				<h3>Let's Develop It!</h3>
+        <h5>Exercise 2</h5>
 				<p>Let's add some spans to our content to help <br/>highlight some text. </p>
 			</section>
 
@@ -286,12 +247,30 @@
 			</section>
 
 			<section>
+				<h3>Types of CSS Selectors</h3>
+				<br/>
+				<h4><span class="white">Selectors We've Seen So Far</span></h4>
+				<pre><code class="css">p {} /* Element Selector */
+p em {} /* Descendant Selector */
+#header {} /* ID Selector */
+.highlight {} /* Class Selector */</code></pre>
+				<br/>
+				<div class="fragment">
+					<h4><span class="white">New Selector Formats</span></h4>
+					<pre><code class="css">h1, h2 {} /* Apply the same code block to multiple elememnts */
+div#sidebar {} /* Select an element with a specific ID */
+p.alert{} /* Select elements with a specific Class */</code></pre>
+				</div>
+			</section>
+
+			<section>
+				<h4>Types of Selectors</h4>
 				<h3>Pseudo-classes</h3>
-				<p><strong class="green">Pseudo-classes</strong> add special effects to some CSS selectors</p>
+				<p class="fragment"><strong class="green">Pseudo-classes</strong> add special effects to some CSS selectors</p>
 				<div class="fragment">
 					<ul>
-						<li>Appears after the standard selector</li>
-						<li>Begins with a colon <strong class="yellow">:</strong></li>
+						<li>Appear at the end of a selector</li>
+						<li>Begin with a colon <strong class="yellow">:</strong></li>
 					</ul>
 					<pre><code class="css">selector:pseudo-class{
   property:value;
@@ -315,15 +294,17 @@ a:active {color:#0000FF;} /* selected link */</code></pre>
 				<style>
 					a#test_link:link{ 	 color:#FF0000; }
 					a#test_link:visited{ color:#00FF00; }
-					a#test_link:hover{ 	 color:#FF00FF; }
+					a#test_link:hover,
+					a#test_link:focus{	 color:#FF00FF; }
 					a#test_link:active{  color:#0000FF; }
 				</style>
 				<a href="class3.html#/0" id="test_link">Sample Link</a>
 			</section>
 
 			<section>
-				<img src="images/new_years.png" alt="Sparkler Cake" style="box-shadow:none; width:70px; height: 70px; vertical-align:middle;margin-top:0px;"/>
+				<img src="images/happy_code.png" alt="Happy Code" class="noborder" style="width:90px;height:auto;">
 				<h3>Let's Develop It!</h3>
+        <h5>Exercise 3</h5>
 				<p>Add pseudo classes to your links in CSS.</p>
 				<p>Bonus: Add <code class="yellow">text-decoration: none;</code> to one of your new link classes and see what it does.</p>
 			</section>
@@ -360,9 +341,9 @@ a:active {color:#0000FF;} /* selected link */</code></pre>
 
 			<section>
 				<h3>Padding Syntax</h3>
-				<pre><code class="html css">{ padding: all; }                   /* one value for all sides */
-{ padding: top/bottom left/right; } /* two values */
-{ padding: top right bottom left; } /* four values */</code></pre>
+				<pre><code class="html css">{ padding: [all]; }                         /* one value for all sides */
+{ padding: [top/bottom] [left/right]; }     /* two values */
+{ padding: [top] [right] [bottom] [left]; } /* four values */</code></pre>
 				<p style="margin-top:1em;">Example of Padding Declaration with 4 Values:</p>
 				<pre><code class="css">{ padding: 10px 20px 30px 40px; }</code></pre>
 				<img src="images/box-model-padding2.png" alt="Graphic illustrating box model, with uneven padding" style="width:60%;"/>
@@ -382,7 +363,7 @@ a:active {color:#0000FF;} /* selected link */</code></pre>
 
 			<section>
 				<h3>Border</h3>
-				<p>Borders are specified as "thickness, style, color".</p>
+				<p>Borders are specified as "width, style, color".</p>
 				<div style="margin-top:1em;">A solid red border</div>
 				<pre><code class="css">{ border: 1px solid #ff0000; }</code></pre>
 				<div style="margin-top:1em;">A thick dotted black top border</div>
@@ -401,8 +382,9 @@ a:active {color:#0000FF;} /* selected link */</code></pre>
 			</section>
 
 			<section>
-				<img src="images/new_years.png" alt="Sparkler Cake" style="box-shadow:none; width:70px; height: 70px; vertical-align:middle; margin-top:0px;"/>
+				<img src="images/happy_code.png" alt="Happy Code" class="noborder" style="width:90px;height:auto;">
 				<h3>Let's Develop It!</h3>
+        <h5>Exercise 4</h5>
 				<p>Let's add some <span class="green">padding</span> and <span class="green">borders</span> to our content.</p>
 			</section>
 
@@ -423,17 +405,19 @@ a:active {color:#0000FF;} /* selected link */</code></pre>
 			</section>
 
 			<section>
-				<img src="images/new_years.png" alt="Sparkler Cake" style="box-shadow:none; width:70px; height: 70px; vertical-align:middle; margin-top:0px;"/>
+				<img src="images/happy_code.png" alt="Happy Code" class="noborder" style="width:90px;height:auto;">
 				<h3>Let's Develop It!</h3>
+        <h5>Exercise 5</h5>
 				<p>Add some <span class="green">margins</span> to your content.</p>
 				<p>How does this differ from the padding we added earlier?</p>
 			</section>
 
 			<section>
 				<h3>Property: Width</h3>
-				<p>Sets the width of an element.</p>
-				<p>The width value does not include padding or borders. <br/>These will add to the total width.</p>
-				<pre><code class="css">div#sidebar{
+				<p>Sets the width of the content of an element.</p>
+				<p class="fragment">Measured in px, em, rem, %</p>
+				<p class="fragment">The width value does not include padding or borders. <br/>These will add to the total width of the element.</p>
+				<pre class="fragment"><code class="css">div#sidebar{
   width: 31%;
   padding: 1%;
   border: none; /* Total width is 33% */
@@ -442,9 +426,10 @@ a:active {color:#0000FF;} /* selected link */</code></pre>
 
 			<section>
 				<h3>Property: Height</h3>
-				<p>Sets the height of an element.</p>
-				<p>The height value does not include padding or borders. <br/>These will add to the total height.</p>
-				<pre><code class="css">p.alert{
+				<p>Sets the height of the content of an element.</p>
+				<p class="fragment">Measured in px, em, rem, %</p>
+				<p class="fragment">The height value does not include padding or borders. <br/>These will add to the total height of the element.</p>
+				<pre class="fragment"><code class="css">p.alert{
   height: 50px;
   padding: 5px;
   border: 2px solid red; /* Total height is 64px */
@@ -452,40 +437,42 @@ a:active {color:#0000FF;} /* selected link */</code></pre>
 			</section>
 
 			<section>
-				<img src="images/new_years.png" alt="Sparkler Cake" style="box-shadow:none; width:70px; height: 70px; vertical-align:middle;margin-top:0px;"/>
+				<img src="images/happy_code.png" alt="Happy Code" class="noborder" style="width:90px;height:auto;">
 				<h3>Let's Develop It!</h3>
+        <h5>Exercise 6</h5>
 				<p>Let's add a <span class="green">width</span> &amp; <span class="green">height</span> to our divs.</p>
 				<p>Use IDs to target each div with CSS.</p>
 			</section>
 
 
 		   <section>
-			   <h3>Auto Margin</h3>
-			   <p>If a margin is set to <code class="yellow">auto</code> on a block element that has <code class="yellow">width</code>, that margin will take up as much space as possible.</p>
-			   <div style="margin-top:1em;">Centered</div>
-			   <pre style="width:40%;"><code class="css">{ width: 300px;
+				<h3>Margin: Auto</h3>
+				<p>If a margin is set to <code class="yellow">auto</code> on a block element that has <code class="yellow">width</code>, that margin will take up as much space as possible.</p>
+				<div style="margin-top:1em;">Centered</div>
+				<pre style="width:40%;"><code class="css">{ width: 300px;
   margin: auto; }</code></pre>
-			   <div style="margin-top:1em;">Flush-Right</div>
-			   <pre style="width:40%;"><code class="css">{ width: 300px;
+				<div style="margin-top:1em;">Flush-Right</div>
+				<pre style="width:40%;"><code class="css">{ width: 300px;
   margin-left: auto;
   margin-right: 5px; }</code></pre>
 		   </section>
 
 		   <section>
-			   <h3>Wrappers</h3>
-			   <p>Wrappers are a good way to center content if the user's screen width is wider than your content.</p>
-			   <pre><code class="css">div.wrapper {
+				<h3>Wrappers</h3>
+				<p>Wrappers are a good way to center content if the user's screen width is wider than your content.</p>
+				<pre><code class="css">div.wrapper {
   width: 100%;
-  max-width: 1400px;
+  max-width: 1200px;
   margin: 0 auto;
 }</code></pre>
 		   </section>
 
 
    			<section>
-   			   <img src="images/new_years.png" alt="Sparkler Cake" style="box-shadow:none; width:70px; height: 70px; vertical-align:middle; margin-top:0px;"/>
-   			   <h3>Let's Develop It!</h3>
-   			   <p>Let's center our entire document in the browser <br/>using a wrapper.</p>
+				<img src="images/happy_code.png" alt="Happy Code" class="noborder" style="width:90px;height:auto;">
+				<h3>Let's Develop It!</h3>
+        <h5>Exercise 7</h5>
+				<p>Let's center our entire document in the browser <br/>using a wrapper.</p>
 		   </section>
 
 			<section>
@@ -495,23 +482,27 @@ a:active {color:#0000FF;} /* selected link */</code></pre>
 
 			<!-- 														NEXT STEPS -->
 			<section>
-				<h4>SECTION 4</h4>
+				<h4>SECTION 5</h4>
 				<h1><strong class="white">NEXT STEPS</strong></h1>
 			</section>
 
 			<section>
-				<h3><a href="homework3.html" target="_blank">Homework for Next Class</a></h3>
-				<h4><a href="files/reference-sheet-3.pdf" target="blank">Class 3 Reference Sheet</a></h4>
-				<br/>
+        <img src="images/happy_code.png" alt="Happy Code" class="noborder" style="width:90px;height:auto;">
+				<p><a href="homework3.html" target="_blank">Homework</a></p>
+				<p><a href="files/reference-sheet-3.pdf" target="blank">Class 3 Reference Sheet</a></p>
+        <p><a href="https://github.com/girldevelopitcincinnati/gdi-cincinnati-intro-html-css/tree/master/exercises" target="_blank">"Let's Develop It" Solutions</a>
+				</p>
+        <br>
 				<h4>Need Help?</h4>
-				<p class="left-align">Email me or reach out to any of us through Slack!  The staff and TA's for this class are:
-				<ul>
-					<li>Maria Szubski (MariaSzubski@gmail.com)</li>
-					<li>Lauren Lawson</li>
-					<li>Jen Cihla</li>
-					<li>Sam Essel-Addo</li>
-					<li>Sara Powell</li>
-				</ul>
+				<small class="left-align" style="width:50%; font-style:normal"><p>Email me or reach out to any of us through Slack!  The staff and TA's for this class are:</p>
+  				<ul>
+  					<li>Maria Szubski (MariaSzubski@gmail.com)</li>
+  					<li>Sophie Pouliquen</li>
+            <li>Talya Flowers</li>
+            <li>Qeiara Fuller</li>
+  					<li>Lauren Lawson</li>
+  				</ul>
+        </small>
 			</section>
 		</div>
 		<!-- Close slides -->

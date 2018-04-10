@@ -18,7 +18,7 @@
   color: #4DE8ED;
 }
 
-.tomorrow-yellow, pre .string, pre .value, pre .inheritance, pre .header, pre .ruby .symbol, pre .xml .cdata {
+.tomorrow-yellow,  pre .value, pre .inheritance, pre .header, pre .ruby .symbol, pre .xml .cdata {
   color: #FFD26C;
 }
 
@@ -26,7 +26,7 @@
   color: #F7A357;
 }
 
-.tomorrow-blue, pre .function, pre .python .decorator, pre .python .title, pre .ruby .function .title, pre .ruby .title .keyword, pre .perl .sub, pre .javascript .title, pre .coffeescript .title {
+.tomorrow-blue, pre .function, pre .python .decorator, pre .python .title, pre .ruby .function .title, pre .ruby .title .keyword, pre .perl .sub, pre .javascript .title, pre .coffeescript .title, pre .javascript .string {
   color: #7086FB;
 }
 

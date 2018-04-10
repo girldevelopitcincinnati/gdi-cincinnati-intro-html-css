@@ -50,12 +50,12 @@
 		<!-- Any section element inside of this container is displayed as a slide-->
 		<div class="slides">
 			<section>
-				<img src="images/new_years.png" alt="Sparkler Cake" style="box-shadow:none;"/>
+        <img src="images/happy_code.png" alt="Happy Code" class="noborder" style="width:240px;height:auto;">
 				<h1>Code Your First Website</h1>
-				<h4>New Year's Edition!</h4>
-				<h4 style="margin-top: 50px;"><span class="white">Today's Slides</span></h4>
+				<h4>Intro to HTML and CSS</h4>
+				<h4 style="margin-top: 50px;"><span class="white">Class Materials</span></h4>
 				<p>
-					<a href="http://html.gdicincy.com/class4.html">http://html.gdicincy.com/class4.html</a>
+					<a href="http://html.gdicincy.com">http://html.gdicincy.com</a>
 				</p>
 			</section>
 
@@ -64,6 +64,7 @@
 				<h1>Intro to HTML and CSS</h1>
 				<h4><span class="white">Class 4</span></h4>
 			</section>
+
 
 			<section>
 				<h1>Let's talk homework!</h1>
@@ -129,8 +130,9 @@
             </section>
 
 			<section>
-				<img src="images/new_years.png" alt="Sparkler Cake" style="box-shadow:none; width:70px; height: 70px; vertical-align:middle;margin-top:0px;"/>
+				<img src="images/happy_code.png" alt="Happy Code" class="noborder" style="width:90px;height:auto;">
 				<h3>Let's Develop It!</h3>
+        <h5>Exercise 1</h5>
 				<p>
 					If you want to use <code class="yellow">box-sizing: border-box;</code> on your entire site, this is the best
 					way to insert it into your CSS.
@@ -145,6 +147,7 @@
 				<small>
 					These rules should be listed first in your CSS file so that they can cascade down to all other rules.
 				</small>
+				<a href="https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/" target="_blank">Code Explanation</a>
             </section>
 
 			<!-- 														POSITIONING -->
@@ -316,21 +319,21 @@
 				<p>When you use positioning to move elements out of the normal flow of content, elements can overlap.</p>
 				<p>You can change the order of overlapping with <code class="yellow">z-index</code>. The element with highest z-index goes on top.</p>
 				<pre style="width:48%;" class="left"><code class="xml">&lt;div class="container">
-  &lt;div class="top">
-    top
+  &lt;div class="first">
+    First
   &lt;/div>
-  &lt;div class="bottom">
-    bottom
+  &lt;div class="second">
+    Second
   &lt;/div>
 &lt;/div></code></pre>
-				<pre style="width:48%;" class="right"><code class="css">.bottom {
+				<pre style="width:48%;" class="right"><code class="css">.second {
   position: absolute;
   bottom: 10px;
   left: 80px;
   background-color: yellow;
 }
 
-.top {
+.first {
   position: absolute;
   bottom: 25px;
   left:60px;
@@ -338,15 +341,16 @@
   z-index: 2;
 }</code></pre>
 				<div class="clear"></div>
- 				<div style="position: absolute; bottom: -44px; left:60px; background-color: green; z-index: 2; padding: 6px; ">Top</div>
-				<div style="position: absolute; bottom: -64px; left:80px; background-color: yellow; color:black; padding: 6px;">Bottom</div>
-            </section>
+ 				<div style="position: absolute; bottom: -44px; left:60px; background-color: green; z-index: 2; padding: 6px; ">First</div>
+				<div style="position: absolute; bottom: -64px; left:80px; background-color: yellow; color:black; padding: 6px;">Second</div>
+      </section>
 
-            <section data-background="images/rocketcat.gif"></section>
+      <section data-background="images/rocketcat.gif"></section>
 
-            <section>
-				<img src="images/new_years.png" alt="Sparkler Cake" style="box-shadow:none; width:70px; height: 70px; vertical-align:middle;margin-top:0px;"/>
+      <section>
+				<img src="images/happy_code.png" alt="Happy Code" class="noborder" style="width:90px;height:auto;">
 				<h3>Let's Develop It!</h3>
+        <h5>Exercise 2</h5>
 				<p>Let's add some positioning.</p>
 				<p>Let's create a div that contains an image and a caption, and position the caption absolutely overtop the image.</p>
 				<img src="images/example-absolute.png" class="noborder" alt="Photo with caption overlayed on top" style="width:60%;"/>
@@ -369,8 +373,9 @@
             </section>
 
 			<section>
-				<img src="images/new_years.png" alt="Sparkler Cake" style="box-shadow:none; width:70px; height: 70px; vertical-align:middle;margin-top:0px;"/>
+				<img src="images/happy_code.png" alt="Happy Code" class="noborder" style="width:90px;height:auto;">
 				<h3>Let's Develop It!</h3>
+        <h5>Exercise 3</h5>
 				<p>Let's fix a header bar to the top of the page!</p>
 				<pre><code class="xml">&lt;header>
   Welcome to My Site!!
@@ -441,14 +446,40 @@ clear: both;</code></pre></li>
             </section>
 
 			<section>
-				<h3>Clear</h3>
+				<h3>Using Clear to Stop Floats</h3>
+				<pre style="width:48%;" class="left"><code class="css">.left {
+  float: left;
+  width: 40%;
+  border: 1px solid orange;
+}
+.right {
+  float: right;
+  width: 40%;
+  border: 1px solid pink;
+}
+.clear {
+  clear: both;
+}</code></pre>
+				<pre style="width:48%;" class="right"><code class="xml"><div class="left">
+    Left Column
+</div>
+<div class="right">
+    Right Column
+</div>
+<div class="clear"></div>
+<p>Not a floating element</p></code></pre>
+				<div class="clear"></div>
+			</section>
+
+			<section>
+				<h3>Using Clear to Stop Floats</h3>
 				<pre  style="width:40%;"><code class="css">.float{
   float:left;
   width:50px;
   background:yellow;
 }
 .clear-left{
-  clear:left
+  clear:left;
 }</code></pre>
 				<div style ="float:left;width:50px;background:yellow; color:black; ">
 					hi<br/>
@@ -461,19 +492,18 @@ clear: both;</code></pre></li>
 			</section>
 
 			<section>
-				<img src="images/new_years.png" alt="Sparkler Cake" style="box-shadow:none; width:70px; height: 70px; vertical-align:middle;margin-top:0px;"/>
+				<img src="images/happy_code.png" alt="Happy Code" class="noborder" style="width:90px;height:auto;">
 				<h3>Let's Develop It!</h3>
+        <h5>Exercise 4</h5>
 				<p>Let's float our side bar and content areas.</p>
 				<p class="fragment" style="margin-top: 20px;"><a href="http://jsbin.com/gubeyegasi/edit?html,css,output" target="_blank">(Sample Code)</a></p>
 			</section>
 
- 			<section>
- 				<h2>Questions</h2>
- 				<div style="font-size:1200%; height:100%; margin-top:25%" class="yellow">?</div>
- 			</section>
-
 			<section>
-				<h4><a href="files/reference-sheet-4.pdf" target="blank">Class 4 Reference Sheet</a></h4>
+        <img src="images/happy_code.png" alt="Happy Code" class="noborder" style="width:90px;height:auto;">
+				<h3>More Info About Layouts</h3>
+				<p><a href="files/reference-sheet-4.pdf" target="blank">Class 4 Reference Sheet</a></p>
+				<p><a href="http://learnlayout.com/" target="_blank">Learn CSS Layout</a> explains CSS positioning, floats, and other layout concepts with some helpful diagrams.</p>
 			</section>
 
 			<section>
@@ -481,8 +511,8 @@ clear: both;</code></pre></li>
 				<ul>
 					<li><a href="https://www.codecademy.com/"  target="_blank">Codecademy</a> has interactive exercises for more reinforcement.</li>
 					<li><a href="http://codepen.io/"  target="_blank">Codepen</a> is a good tool for experimenting with HTML and CSS and looking at others' code too.</li>
-					<li><a href="http://www.cincinnatilibrary.org/news/2015/lynda.html" target="_blank">The Cincinnati Library</a> offers free lynda.com access with your library card.</li>
-					<li><a href="http://learnlayout.com/" target="_blank">Learn CSS Layout</a> explains CSS positioning, floats, and other layout concepts with some helpful diagrams.</li>
+					<li><a href="https://css-tricks.com/guides/"  target="_blank">CSS Tricks</a> has a ton of articles about CSS best practices.</li>
+					<li>The Cincinnati Library offers free <a href="http://www.cincinnatilibrary.org/news/2015/lynda.html" target="_blank">Lynda.com</a> and <a href="http://www.cincinnatilibrary.org/services/treehouse.aspx" target="_blank">Treehouse</a> access with your library card.</li>
 				</ul>
 			</section>
 
@@ -491,9 +521,21 @@ clear: both;</code></pre></li>
 				<ul>
 					<li><a href="http://mathemagica.github.io/gdi-hosting-in-30-minutes/#/"  target="_blank">Hosting Explained in 30 Minutes</a></li>
 					<li><a href="https://www.thinkful.com/learn/a-guide-to-using-github-pages/start/existing-project/user-page/"  target="_blank">Using GitHub Pages for Hosting</a></li>
-					<li>Domain Registrars: <a href="https://www.namesilo.com" target="_blank">NameSilo</a> &amp; <a href="https://www.name.com/"  target="_blank">Name.com</a></li>
+					<li>Domain Registrars: <a href="https://www.namesilo.com" target="_blank">NameSilo</a>, <a href="https://www.name.com/"  target="_blank">Name.com</a>, &amp; <a href="https://www.namecheap.com/" target="_blank">Namecheap</a></li>
 					<li><a href="https://help.github.com/articles/quick-start-setting-up-a-custom-domain/"  target="_blank">Pointing your domain to your GitHubPages</a></li>
+					<li>Paid Hosting: <a href="https://aws.amazon.com/websites/" target="_blank">Amazon</a> &amp; <a href="https://www.digitalocean.com/" target="_blank">Digital Ocean</a></li>
+					<li><a href="https://education.github.com/pack" target="_blank">Github Student Developer Pack</a> has discounts on lots of developer tools with a .edu email.
 				</ul>
+			</section>
+
+ 			<section>
+ 				<h2>Questions</h2>
+ 				<div style="font-size:1200%; height:100%; margin-top:25%" class="yellow">?</div>
+ 			</section>
+
+			<section>
+				<img src="images/happy_code.png" alt="Happy Code" class="noborder" style="width:220px;height:auto;">
+				<h2 style="margin-top: 50px;">Certificates &amp; Annoucements!</h2>
 			</section>
 		</div>
 		<!-- Close slides -->
