@@ -1,0 +1,55 @@
+body {
+  background-color: #6ed3cf;
+  font-family: Georgia, serif;
+}
+
+a{
+  color: #173e43;
+  font-family: Verdana;
+}
+
+nav{
+  background-color: #fae596;
+  text-align: center;
+}
+
+p{
+  color: #173e43;
+  background-color: #9AEDEA;
+  font-size: 1.2rem;
+  line-height: 140%;
+}
+
+p em{
+  text-decoration: underline double;
+  color:#E22E9A;
+}
+
+h1, h2{
+  color: #086575;
+  font-family: "Courier New", monospace;
+}
+
+h1{
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+li{
+    color: #173e43;
+    font-size: 1.1rem;
+    line-height: 120%;
+}
+
+ul li{
+  list-style-type: circle;
+}
+
+ol li{
+  list-style-type: lower-greek;
+}
+
+footer{
+  text-align: center
+}
