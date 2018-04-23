@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css?family=Delius+Swash+Caps|Grand+Hotel|Lora');
+
+body {
+  background-image: url('images/regal.png');
+  font-family: 'Lora', serif;
+  color: #263739;
+}
+
+nav{
+  text-align: center;
+}
+
+#pgheader{
+  background-color: rgba(252, 224, 116, 0.68);
+}
+
+/*------------- LINK STYLES */
+
+a:link{
+  color: #173e43;
+}
+
+a:visited{
+  color: #173e43;
+}
+
+a:hover{
+  text-decoration: none;
+  color: #0389D4;
+}
+
+a:active{
+  text-decoration: none;
+  color: #C2781E;
+}
+/*------------- END LINK STYLES */
+
+h1, h2, h3{
+  color: #086575;
+  font-weight: 400;
+}
+
+h1{
+  font-family: 'Delius Swash Caps', cursive;
+  font-size: 2.2rem;
+  text-align: center;
+  color: #C2781E;
+}
+
+h2{
+  font-family: 'Delius Swash Caps', cursive;
+  font-size: 4rem;
+  text-align: center;
+}
+
+h3{
+  font-family: 'Grand Hotel', cursive;
+  font-size: 2rem;
+}
+
+#hero_img{
+  border: 4px double #C2781E;
+  border-radius: 60px;
+  margin: auto;
+  display: block;
+}
+
+#hero_img:hover{
+  cursor: zoom-in;
+}
+
+p{
+  line-height: 140%;
+}
+
+header p{
+  font-size: 1.3rem;
+}
+
+.group{
+  background-color: rgba(151, 240, 211, 0.56);
+}
+
+p em{
+  text-decoration: underline double;
+  color:#F2249F;
+}
+
+p em:hover{
+  cursor: help;
+}
+
+.highlight{
+  background-color: #FFF1BA;
+}
+
+.ingredients{
+  text-decoration: underline;
+}
+
+li{
+  line-height: 160%;
+}
+
+ul li{
+  list-style-type: circle;
+}
+
+footer{
+  text-align: center;
+}
