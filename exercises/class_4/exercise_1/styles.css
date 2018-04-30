@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Delius+Swash+Caps|Grand+Hotel|Lora');
 
+html{
+  box-sizing: border-box;
+}
+
+*, *:before, *:after{
+  box-sizing: inherit;
+}
+
 body {
   background-image: url('images/regal.png');
   font-family: 'Lora', serif;
@@ -29,7 +37,7 @@ nav{
 
 a:link{
   color: #173e43;
-  padding: 0px 10px;
+  padding: 5px 10px;
 }
 
 a:visited{
@@ -39,12 +47,32 @@ a:visited{
 a:hover{
   text-decoration: none;
   color: #0389D4;
+  background-color: rgba(254, 247, 219, 0.68);
 }
 
 a:active{
   text-decoration: none;
   color: #C2781E;
 }
+
+a#roll_img{
+  display: block;
+  width: 500px;
+  height: 320px;
+  margin: auto;
+
+  background-image: url('images/roll_01.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  transition: background-image 0.3s ease;
+}
+
+a#roll_img:hover{
+  background-image: url('images/roll_02.jpg');
+  transition: background-image 0.3s ease;
+}
+
 /*------------- END LINK STYLES */
 
 h1, h2, h3{
@@ -136,4 +164,28 @@ ul li{
 footer{
   text-align: center;
   margin: 50px auto 10px auto;
+}
+
+#boxsizing div{
+  background-clip: content-box;
+
+  background-color: #E077A6;
+  width: 300px;
+  height: 100px;
+  border: 4px solid #AF366C;
+
+  padding: 20px;
+  margin: 20px auto;
+
+  font-size: 1.2rem;
+  text-align: center;
+  color: #401B2C;
+}
+
+.borderbox{
+  box-sizing: border-box;
+}
+
+.contentbox{
+  box-sizing: content-box;
 }

@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css?family=Delius+Swash+Caps|Grand+Hotel|Lora');
+
+html{
+  box-sizing: border-box;
+  height: 100%;
+}
+
+*, *:before, *:after{
+  box-sizing: inherit;
+}
+
+body {
+  background-image: url('images/regal.png');
+  font-family: 'Lora', serif;
+  color: #263739;
+  margin: 0px;
+  height: 100%;
+}
+
+.wrapper{
+  width: 100%;
+  padding: 0px 30px;
+}
+
+nav{
+  text-align: center;
+  margin: 0px;
+}
+
+header#pgheader{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(247, 229, 156);
+  border-top: 1px solid rgb(205, 172, 45);
+  padding-top: 7px;
+  padding-bottom: 10px;
+  z-index: 3;
+}
+
+#copyright{
+  text-align: center;
+  font-size: 0.5rem;
+  margin: 8px auto 0px auto;
+}
+
+/* Two Column Layout */
+
+main, aside{
+  position: relative;
+  top: 0px;
+  height: calc(100% - 38px);
+  overflow: auto;
+}
+
+main{
+  width: 68%;
+  float: right;
+  padding-bottom: 30px;
+  z-index: 1;
+}
+
+aside{
+  width: 32%;
+  float: left;
+  z-index: 2;
+}
+
+/* Fancy Scrollbars */
+
+aside::-webkit-scrollbar{
+  width: 0.75rem;
+}
+aside::-webkit-scrollbar-track{
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: inset 0 0 5px rgba(0,0,0, 0.3);
+}
+aside::-webkit-scrollbar-thumb{
+  border-radius: 0.75rem;
+  background: rgba(129, 213, 185, 1);
+  box-shadow: inset 0 0 1px rgba(0,0,0, 0.4);
+}
+
+/*------------- LINK STYLES */
+
+a:link{
+  color: #173e43;
+  padding: 10px;
+  font-size: 0.8rem;
+}
+
+a:visited{
+  color: #173e43;
+}
+
+a:hover{
+  text-decoration: none;
+  color: #0389D4;
+  background-color: rgba(254, 247, 219, 0.68);
+}
+
+a:active{
+  text-decoration: none;
+  color: #C2781E;
+}
+
+a#roll_img{
+  display: block;
+  width: 500px;
+  height: 320px;
+  margin: auto;
+
+  background-image: url('images/roll_01.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  transition: background-image 0.3s ease;
+}
+
+a#roll_img:hover{
+  background-image: url('images/roll_02.jpg');
+  transition: background-image 0.3s ease;
+}
+
+/*------------- END LINK STYLES */
+
+h1, h2, h3{
+  color: #086575;
+  font-weight: 400;
+}
+
+h1{
+  font-family: 'Delius Swash Caps', cursive;
+  font-size: 1.5rem;
+  text-align: center;
+  color: #C2781E;
+}
+
+h2{
+  font-family: 'Delius Swash Caps', cursive;
+  font-size: 4rem;
+  text-align: center;
+}
+
+h3{
+  font-family: 'Grand Hotel', cursive;
+  font-size: 2rem;
+  margin-bottom: 10px;
+  margin-top: 50px;
+}
+
+#hero_img{
+  display: block;
+  margin: 50px auto;
+  min-width: 300px;
+  width: 50%;
+}
+
+#hero_img:hover{
+  cursor: zoom-in;
+}
+
+p{
+  line-height: 140%;
+}
+
+header p{
+  font-size: 1.3rem;
+  padding: 20px 90px;
+}
+
+.group{
+  background-color: rgba(8, 101, 117, 0.3);
+}
+
+#history{
+  padding: 20px 30px;
+  background-color: rgba(151, 240, 211, 0.56);
+  border-left: 1px solid rgb(106, 212, 177);
+}
+
+#history h3{
+  text-align: center;
+  margin-top: 0px;
+}
+
+#history p{
+  margin: 25px auto;
+}
+
+p em{
+  text-decoration: underline double;
+  color:#F2249F;
+}
+
+p em:hover{
+  cursor: help;
+}
+
+.highlight{
+  background-color: #FFF1BA;
+}
+
+.ingredients{
+  text-decoration: underline;
+}
+
+li{
+  line-height: 160%;
+}
+
+ul li{
+  list-style-type: circle;
+}
+
+.thumbnail{
+  display: inline-block;
+  border: 3px solid white;
+  border-radius: 10px;
+  width: 100%;
+  position: relative;
+}
+
+.thumbnail img{
+  display: block;
+  width: 100%;
+  border-radius: 7px;
+}
+
+.thumbnail .caption{
+  position: absolute;
+  bottom: 30px;
+  background-color: white;
+  padding: 8px 20px;
+}

@@ -29,7 +29,7 @@ nav{
 
 a:link{
   color: #173e43;
-  padding: 0px 10px;
+  padding: 5px 10px;
 }
 
 a:visited{
@@ -39,6 +39,7 @@ a:visited{
 a:hover{
   text-decoration: none;
   color: #0389D4;
+  background-color: rgba(254, 247, 219, 0.68);
 }
 
 a:active{
@@ -122,7 +123,7 @@ p em:hover{
 }
 
 .ingredients{
-  text-decoration: underline;
+  font-size: 200%;
 }
 
 li{
@@ -137,3 +138,25 @@ footer{
   text-align: center;
   margin: 50px auto 10px auto;
 }
+
+/* Using an image as a link that changes on hover */
+
+a#roll_img{
+  display: block;
+  width: 500px;
+  height: 320px;
+  margin: auto;
+
+  background-image: url('images/roll_01.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  transition: background-image 0.3s ease;
+}
+
+a#roll_img:hover{
+  background-image: url('images/roll_02.jpg');
+  transition: background-image 0.3s ease;
+}
+
+/* */
